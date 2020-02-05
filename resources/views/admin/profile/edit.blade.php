@@ -8,6 +8,6 @@
         <title>MyNews</title>
     </head>
     <body>
-        <h1>Edit画面</h1>
+        <h1>edit画面</h1>
     </body>
 </html>
