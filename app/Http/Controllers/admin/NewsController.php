@@ -16,7 +16,8 @@ class NewsController extends Controller
 
 public function create(Request $request)
   {
-
+      return redirect('admin/news/create');
+      
       // 以下を追記
       // Varidationを行う
       $this->validate($request, News::$rules);
