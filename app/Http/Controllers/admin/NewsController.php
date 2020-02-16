@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -14,10 +13,9 @@ class NewsController extends Controller
       return view('admin.news.create');
   }
 
-public function create(Request $request)
+ public function create(Request $request)
   {
-      return redirect('admin/news/create');
-      
+
       // 以下を追記
       // Varidationを行う
       $this->validate($request, News::$rules);
