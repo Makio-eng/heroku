@@ -1,11 +1,12 @@
 @extends('layouts.admin')
-@section('title', 'プロフィール作成画面')
+@section('title', 'プロフィールの編集')
 
 @section('content')
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>edit</h2>
+                <h2>プロフィール編集</h2>
+                <!--入力した内容をprofilecontrollerのupdateアクションに送る-->
                 <form action="{{ action('Admin\ProfileController@update') }}" method="post" enctype="multipart/form-data">
 
                     @if (count($errors) > 0)
