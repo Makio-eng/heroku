@@ -30,6 +30,7 @@ class ProfileController extends Controller
       // データベースに保存する
       $profile->fill($form);
       $profile->save();
+      
         return redirect('admin/profile/create');
     }
 
